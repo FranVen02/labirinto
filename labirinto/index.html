@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Jogo</title>
+</head>
+<body>
+
+    <main>
+
+        <h1>Labirinto</h1>
+        <p>Espaço Vazio: 0  -  Jogador: 1<br>Parede: 2  -  Inimigo: 3<br>Bandeira: 4</p>
+
+    </main>
+    <figure id="mapa">
+
+    </figure>
+    <section>
+
+        <button accesskey="w" onclick="upmove(), attViewport()" id="botao1">↑</button>
+        
+        <br>
+
+        <button accesskey="a" onclick="leftmove(), attViewport()" id="botao2">←</button>
+        <button accesskey="s" onclick="downmove(), attViewport()" id="botao3">↓</button>
+        <button accesskey="d" onclick="rightmove(), attViewport()" id="botao4">→</button>
+
+    </section>
+    <div id="win"></div>
+</body>
+</html>
